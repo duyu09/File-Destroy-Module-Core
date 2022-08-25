@@ -1,0 +1,62 @@
+[Project]
+FileName=DyEnc File Destroy Module.dev
+Name=DyEnc File Destroy Module
+Type=1
+Ver=2
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=DyEnc_File_Destroy_Module_private.rc
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=-ffast-math -O2 -DNDEBUG_@@_
+Linker=
+IsCpp=1
+Icon=DyEnc File Destroy Module.ico
+ExeOutput=
+ObjectOutput=
+LogOutput=
+LogOutputEnabled=0
+OverrideOutput=0
+OverrideOutputName=DyEnc File Destroy Module.exe
+HostApplication=
+UseCustomMakefile=0
+CustomMakefile=
+CommandLine=
+Folders=
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=000000c000000000000000000
+UnitCount=1
+
+[VersionInfo]
+Major=2
+Minor=0
+Release=0
+Build=8
+LanguageID=1033
+CharsetID=1252
+CompanyName=Qilu University of Technology, Faculty of Computer Science & Technology, Duyu (No.202103180009)
+FileVersion=2.0.0.8
+FileDescription=DuyuEncryptor File Destroy Module Core Vision 2.0.0
+InternalName=
+LegalCopyright=Copyright (c) 2022 Qilu University of Technology, Faculty of Computer Science & Technology, Duyu (No.202103180009)
+LegalTrademarks=
+OriginalFilename=DyEnc_FileDestroyModule.exe
+ProductName=DuyuEncryptor File Destroy Module Core Vision 2.0.0
+ProductVersion=2.0.0.8
+AutoIncBuildNr=1
+SyncProduct=1
+
+[Unit1]
+FileName=DyEnc_FileDestroyModule.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+

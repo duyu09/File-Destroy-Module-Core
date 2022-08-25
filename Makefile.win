@@ -1,0 +1,33 @@
+# Project: DyEnc File Destroy Module
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = DyEnc_File_Destroy_Module_private.res
+OBJ      = DyEnc_FileDestroyModule.o $(RES)
+LINKOBJ  = DyEnc_FileDestroyModule.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = "DyEnc File Destroy Module.exe"
+CXXFLAGS = $(CXXINCS) -Ofast -lgraphics64 -luuid -lmsimg32 -lgdi32 -limm32 -lole32 -loleaut32 -lwinmm -lgdiplus -ffast-math -O2 -DNDEBUG
+CFLAGS   = $(INCS) -Ofast -lgraphics64 -luuid -lmsimg32 -lgdi32 -limm32 -lole32 -loleaut32 -lwinmm -lgdiplus
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+DyEnc_FileDestroyModule.o: DyEnc_FileDestroyModule.cpp
+	$(CPP) -c DyEnc_FileDestroyModule.cpp -o DyEnc_FileDestroyModule.o $(CXXFLAGS)
+
+DyEnc_File_Destroy_Module_private.res: DyEnc_File_Destroy_Module_private.rc 
+	$(WINDRES) -i DyEnc_File_Destroy_Module_private.rc --input-format=rc -o DyEnc_File_Destroy_Module_private.res -O coff 
+
